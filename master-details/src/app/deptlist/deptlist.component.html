@@ -1,0 +1,14 @@
+<h1>Departments</h1>
+<table>
+    <tr>
+        <td>
+            <div class="container">
+                <ul *ngFor='let dept of dlist' class='list-group'>
+                    <li class="list-group-item" (click)='onClick(dept)'><span>{{dept.dno}}</span>
+                        {{dept.dname}}</li>
+                </ul>
+            </div>
+        </td>
+    </tr>
+</table>
+<button (click)='dashboard()'>dashboard</button>

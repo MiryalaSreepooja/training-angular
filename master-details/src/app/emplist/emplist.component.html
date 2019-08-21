@@ -1,0 +1,16 @@
+
+<table>
+    <tr>
+        <td>
+<div class="container">
+    <ul *ngFor='let emp of emplist' class='list-group'>
+        <li class="list-group-item" (click)='onClick(emp)'><span>{{emp.id}}</span> {{emp.name}}</li>
+    </ul>
+</div>
+</td>
+<!--
+<td>
+<app-empdetails [emp]='selectedEmp'></app-empdetails></td>-->
+</tr>
+</table>
+<button (click)='dashboard()'>dashboard</button>
